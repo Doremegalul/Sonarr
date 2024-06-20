@@ -414,7 +414,7 @@ namespace NzbDrone.Core.Indexers.Newznab
 
                 foreach (var queryTitle in queryTitles)
                 {
-                    if (searchCriteria.AbsoluteEpisodeNumber == 1) // Hack to reduce number of searches for instructional purposes.  
+                    if (searchCriteria.AbsoluteEpisodeNumber == 1)
                     {
                         pageableRequests.Add(GetPagedRequests(MaxPages,
                             Settings.AnimeCategories,
